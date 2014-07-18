@@ -16,19 +16,11 @@ ActiveRecord::Schema.define(version: 20140718180702) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "articles", force: true do |t|
-    t.string   "name"
-    t.text     "content"
-    t.integer  "phone"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "restaurants", force: true do |t|
     t.string   "name"
     t.text     "description"
     t.string   "address"
-    t.integer   "phone"
+    t.string   "phone"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
