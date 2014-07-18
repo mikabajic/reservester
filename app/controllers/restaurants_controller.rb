@@ -2,6 +2,9 @@ class RestaurantsController < ApplicationController
 	def new
 	end
 	def create
-		render plain: params[:restaurant].inspect
+		@restaurant = Restaurant.new(params[:restaurant])
+
+		@restaurant.save
+		redirect_to @restaurant
 	end 
 end
