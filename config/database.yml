@@ -78,3 +78,8 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+production:
+  <<: *default
+  database: reservester-mika_production
+  username: reservester-mika
+  password: <%= ENV['RESERVESTER-MIKA_DATABASE_PASSWORD'] %>
