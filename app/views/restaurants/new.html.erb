@@ -1,1 +1,27 @@
 <h1>New Restaurant</h1>
+
+<%= form_for :restaurant do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+ 
+  <p>
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </p>
+ 
+ <p>
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </p>
+
+<p>
+    <%= f.label :phone_number %><br>
+    <%= f.text_field :prone_number %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
