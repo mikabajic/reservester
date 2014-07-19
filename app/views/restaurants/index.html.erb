@@ -6,6 +6,7 @@
     <th>Description</th>
     <th>Address</th>
     <th>Phone</th>
+    <th colspan="2"></th>
   </tr>
  
   <% @restaurants.each do |restaurant| %>
@@ -14,6 +15,9 @@
       <td><%= restaurant.description %></td>
       <td><%= restaurant.address %></td>
       <td><%= restaurant.phone %></td>
+      <td><%= link_to 'Show', restaurant_path(restaurant) %></td>
+      <td><%= link_to 'Edit', edit_restaurant_path(restaurant) %></td>
+
     </tr>
   <% end %>
 </table>

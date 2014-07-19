@@ -17,6 +17,16 @@ class RestaurantsController < ApplicationController
 		@restaurants = Restaurant.all
 	end
 
+	def update
+  @article = Article.find(params[:id])
+ 
+  if @article.update(article_params)
+    redirect_to @article
+  else
+    render 'edit'
+  end
+end
+
 	def edit
 		@restaurant = Restaurant.find(params[:id])
 	end
