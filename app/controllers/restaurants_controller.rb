@@ -9,12 +9,13 @@ class RestaurantsController < ApplicationController
 		redirect_to @restaurant
 	end 
 
+	def index
+		@restaurant = Restaurant.all
+	end
+
+
 	def show
   	@restaurant = Restaurant.find(params[:id])
-  end 
-
-  def index
-  	@restaurant = Restaurant.all
   end 
 
 	private
