@@ -18,10 +18,9 @@ class RestaurantsController < ApplicationController
 	end
 
 	def update
-  @article = Article.find(params[:id])
- 
-  if @article.update(article_params)
-    redirect_to @article
+		@restaurant = Restaurant.find(params[:id])
+		if @restaurant.update(restaurant_params)
+			redirect_to @restaurant
   else
     render 'edit'
   end
