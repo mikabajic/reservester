@@ -1,4 +1,6 @@
 class RestaurantsController < ApplicationController
+	 http_basic_authenticate_with name: "mika", password: "bajic", except: [:index, :show]
+	
 	def new
 		@restaurant = Restaurant.new
 	end
