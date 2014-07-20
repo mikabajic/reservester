@@ -7,10 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<div class="container-fluid">
+<div class="row">
+  <div class="col-md-8">.col-md-8</div>
+  <div class="col-md-4">.col-md-4</div>
+</div>
 <%= render partial: "partial/navbar" %>
 
 <%= yield %>
 
+</div>
 </body>
 </html>
