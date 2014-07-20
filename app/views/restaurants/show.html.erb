@@ -1,24 +1,24 @@
+
 <table class="table table-hover">
-
-<p>
-  <strong>Name:</strong>
-  <%= @restaurant.name %>
-</p>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Address</th>
+    <th>Phone</th>
+    <th colspan="3"></th>
+  </tr>
  
-<p>
-  <strong>Description:</strong>
-  <%= @restaurant.description %>
-</p>
+  <% @restaurants.each do |restaurant| %>
+    <tr>
+      <td><%= restaurant.name %></td>
+      <td><%= restaurant.description %></td>
+      <td><%= restaurant.address %></td>
+      <td><%= restaurant.phone %></td>
 
-<p>
-  <strong>Address:</strong>
-  <%= @restaurant.address %>
-</p>
+      </tr>
+  <% end %>
+</table>
 
-<p>
-  <strong>Phone:</strong>
-  <%= @restaurant.phone %>
-</p>
 
 <%= link_to 'Back', restaurants_path %>
 | <%= link_to 'Edit', edit_restaurant_path(@restaurant) %>
