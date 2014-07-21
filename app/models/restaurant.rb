@@ -1,8 +1,9 @@
 class Restaurant < ActiveRecord::Base
 	validates :name, presence: true,
-                    length: { minimum: 3 }
+                    length: { minimum: 3 } 
+                    mount_uploader :image, ImageUploader 
+                end 
+            end
+            
 
-mount_uploader :image, ImageUploader 
-end 
-end 
 
