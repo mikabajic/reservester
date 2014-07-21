@@ -4,3 +4,4 @@ class Restaurant < ActiveRecord::Base
                 end 
                 	mount_uploader :image, ImageUploader 
                 end 
+            end
