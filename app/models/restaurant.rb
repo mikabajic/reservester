@@ -3,6 +3,6 @@ class Restaurant < ActiveRecord::Base
                     length: { minimum: 3 }
                 end 
 
-mount_uploader :image, ImageUploader
+mount_uploader :image, ImageUploader 
 end 
-
+end 
