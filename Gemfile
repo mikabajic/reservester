@@ -23,6 +23,7 @@ group :development do
 	gem 'rails_layout'
 	gem 'spring'
 	gem 'hirb'
+	gem 'fog', '~> 1.23.0'
 end
 
 
