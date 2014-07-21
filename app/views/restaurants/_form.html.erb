@@ -32,7 +32,9 @@
  <p>
   <label>Image</label>
   <%= image_tag(@restaurant.image_url) if @restaurant.image? %> 
-  <%= f.file_field :image %>
+  <%= f.file_field :image %><br>
+  <label>URL Image</label><br>
+  <%= f.text_field :remote_image_url %>
   <%= f.hidden_field :image_cache %>
   </p>
   <p>
