@@ -25,7 +25,7 @@ group :development do
 	gem 'hirb'
 	gem 'fog', '~> 1.23.0'
 	gem "binding_of_caller"
-    gem "rmagick", "~>2.13.2", :require => 'RMagick'
+    gem "rmagick", "~>2.13.2"
     gem 'dotenv-rails', :groups => [:development, :test]
 
 
