@@ -35,7 +35,12 @@
   <%= f.file_field :image %>
   <%= f.hidden_field :image_cache %>
   </p>
-
+  <p>
+    <label>
+      <%= f.check_box :remove_image %>
+      Remove image
+    </label>
+  </p>
   <p>
     <%= f.submit %>
   </p>
