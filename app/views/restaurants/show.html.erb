@@ -18,6 +18,10 @@
   <%= @restaurant.phone %>
 </p>
 
+<p>
+	<%= image_tag @restaurant.object.image_url(:thumb) %>
+</p>
+
 
 <%= link_to 'Back', restaurants_path %>
 | <%= link_to 'Edit', edit_restaurant_path(@restaurant) %>
