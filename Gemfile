@@ -17,13 +17,14 @@ gem 'autoprefixer-rails'
 gem 'carrierwave'
 gem "mini_magick"
 gem 'figaro'
+gem 'fog', '~> 1.23.0'
+
 group :development do
 	gem 'better_errors'
 	gem 'quiet_assets'
 	gem 'rails_layout'
 	gem 'spring'
 	gem 'hirb'
-	gem 'fog', '~> 1.23.0'
 	gem "binding_of_caller"
 end
 
