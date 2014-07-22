@@ -25,7 +25,6 @@ group :development do
 	gem 'hirb'
 	gem 'fog', '~> 1.23.0'
 	gem "binding_of_caller"
-    gem 'dotenv-rails', :groups => [:development, :test
 end
 
 
