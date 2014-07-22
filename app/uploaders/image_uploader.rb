@@ -9,7 +9,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   include CarrierWave::MimeTypes 
   process :set_content_type
 
-  #process :resize_to_fit => [800, 800]
+  process :resize_to_fit => [800, 800]
 
   version :thumb do
     process :resize_to_limit => [200,200]
