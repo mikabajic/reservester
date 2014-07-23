@@ -31,7 +31,7 @@
 
  <p>
   <label>Image</label>
-  <%= image_tag (@restaurant.image_url(:thumb).to_s %>
+  <%= image_tag @restaurant.image_url(:thumb) %>
   <%= f.file_field :image %><br>
   <label>URL Image</label><br>
   <%= f.text_field :remote_image_url %>
