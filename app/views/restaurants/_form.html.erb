@@ -31,7 +31,7 @@
 
  <p>
   <label>Image</label>
-  <%= image_tag(@restaurant.image_url) if @restaurant.image? %> 
+  <%= image_tag (@restaurant.image_url(:thumb).to_s if @restaurant.image? %>
   <%= f.file_field :image %><br>
   <label>URL Image</label><br>
   <%= f.text_field :remote_image_url %>
