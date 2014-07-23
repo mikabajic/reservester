@@ -16,13 +16,15 @@
       <td><%= restaurant.address %></td>
       <td><%= restaurant.phone %></td>
       <td><%= image_tag restaurant.image_url(:thumb).to_s %></td>
-      <td><%= link_to 'Show', restaurant_path(restaurant) %></td>
-      <td>
-        
-          <%= link_to '<span class="glyphicon glyphicon-pencil">Edit</span>'.html_safe , edit_restaurant_path(restaurant), class: "btn btn-default btn-md"%>
-  
-</button>
-      <td><%= link_to 'Destroy', restaurant_path(restaurant), method: :delete, data: { confirm: 'Are you sure?'} %></td>
+      <td><%= link_to '<span class="glyphicon glyphicon-eye-open">Show</span>'.html_safe, restaurant_path(restaurant),
+      class: "btn btn-default btn-md"%></td> 
+
+      <td><%= link_to '<span class="glyphicon glyphicon-pencil">Edit</span>'.html_safe , edit_restaurant_path(restaurant), class: "btn btn-default btn-md"%></td>
+
+
+
+      <td><%= link_to '<span class="glyphicon glyphicon-trash">Trash</span>'.html_safe, restaurant_path(restaurant), 
+      class: "btn btn-default btn-md", method: :delete, data: { confirm: 'Are you sure?'} %></td>
 
     </tr>
   <% end %>
