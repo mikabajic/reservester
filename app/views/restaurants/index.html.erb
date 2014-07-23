@@ -17,9 +17,10 @@
       <td><%= restaurant.phone %></td>
       <td><%= image_tag restaurant.image_url(:thumb).to_s %></td>
       <td><%= link_to 'Show', restaurant_path(restaurant) %></td>
-      <td><%= link_to 'Edit', edit_restaurant_path(restaurant) %>
-        <button type="button" class="btn btn-default btn-md">
-  <span class="glyphicon glyphicon-pencil"></span> Edit
+      <td>
+        
+          <%= link_to '<span class="glyphicon glyphicon-pencil">Edit</span>'.html_safe , edit_restaurant_path(restaurant), class: "btn btn-default btn-md"%>
+  
 </button>
       <td><%= link_to 'Destroy', restaurant_path(restaurant), method: :delete, data: { confirm: 'Are you sure?'} %></td>
 
