@@ -23,5 +23,12 @@
 </p>
 
 
-<%= link_to 'Back', restaurants_path %>
-| <%= link_to 'Edit', edit_restaurant_path(@restaurant) %>
+<%= link_to '<span class="glyphicon glyphicon-backward"> Back </span>'.html_safe, restaurants_path, 
+      class: "btn btn-default btn-md"%>
+
+<%= link_to '<span class="glyphicon glyphicon-pencil"> Edit </span>'.html_safe , edit_restaurant_path,
+      class: "btn btn-default btn-md"%>
+
+
+
+ 
