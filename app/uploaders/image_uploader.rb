@@ -6,9 +6,10 @@ class ImageUploader < CarrierWave::Uploader::Base
   #include CarrierWave::RMagick
   include CarrierWave::MiniMagick
 
+  process :resize_to_fit => [500, 500]
 
   version :thumb do
-    process :resize_to_fit => [200,200]
+    process :resize_to_fit => [100,100]
   end
 
 
