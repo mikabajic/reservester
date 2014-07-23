@@ -18,6 +18,9 @@
       <td><%= image_tag restaurant.image_url(:thumb).to_s %></td>
       <td><%= link_to 'Show', restaurant_path(restaurant) %></td>
       <td><%= link_to 'Edit', edit_restaurant_path(restaurant) %>
+        <button type="button" class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-star"></span> Star
+</button>
       <td><%= link_to 'Destroy', restaurant_path(restaurant), method: :delete, data: { confirm: 'Are you sure?'} %></td>
 
     </tr>
