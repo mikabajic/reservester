@@ -19,7 +19,7 @@
 </p>
 
 <p>
-	<%= image_tag @restaurant.image_url(:thumb) %>
+ <%= image_tag(@restaurant.image_url) if @restaurant.image? %> 
 </p>
 
 
